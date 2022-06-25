@@ -15,11 +15,12 @@ const UseReducer = () => {
     const [state, dispatch] = useReducer( reducer, { count: 0, showText: true} )
 
     return(
-        <>
+        <div style={{"backgroundColor": "#00bbf9", "color": "black"}}>
             <h1 style={{"textDecoration": "underline"}}>UseReducer</h1>
         <p>The useReducer hook is similar to useState, but gives us a more structured approach for updating complex values.</p>
         <p>We typically use useReducer when our state has multiple sub-values, e.g. an object containing keys that we want to update independently.</p>
             <section>
+                <h2>Let's go!</h2>
                 <h2>{state.count}</h2>
                 <button onClick={() => {
                     dispatch({ type: "INCREMENT" });
@@ -27,7 +28,8 @@ const UseReducer = () => {
                 }}>Click here to see MAGIC!</button>
                 {state.showText && <p>It's MAGIC!</p>}
             </section>
-        </>
+            <hr/>
+        </div>
     )
 }
 

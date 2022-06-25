@@ -14,28 +14,30 @@ const UseState = () => {
     }
 
     return(
-        <div>
+        <>
             <q>State generally refers to data or properties that need to be tracking in an application.</q>
-            <hr/>
-            <h1 style={{"textDecoration": "underline"}}>UseState Hook</h1>
-            <p>The React useStateHook allows us to track state in a function component.</p>
-            <section>
-                <div>
-                    <h2>Project 1:</h2>
-                    <span style={{"paddingRight": "10px"}}>{initialValue}</span>
-                    <button onClick={onclick}>Increment</button>
-                </div>
-            </section>
-            <hr/>
-            <section>
-                <div>
-                    <h2>Project 2:</h2>
-                    <input placeholder="Please enter here something" onChange={onChange}/>
-                    <span style={{"paddingLeft": "10px"}}>{initialText}</span>
-                </div>
-            </section>
-            <hr />
-        </div>
+            <div style={{"backgroundColor": "#00f5d4", "color": "black"}}>
+                <hr/>
+                <h1 style={{"textDecoration": "underline"}}>UseState Hook</h1>
+                <p>The React useStateHook allows us to track state in a function component.</p>
+                <section>
+                    <div>
+                        <h2>Project 1:</h2>
+                        <span style={{"paddingRight": "10px"}}>{initialValue}</span>
+                        <button onClick={onclick}>Increment</button>
+                    </div>
+                </section>
+                <hr/>
+                <section>
+                    <div>
+                        <h2>Project 2:</h2>
+                        <input placeholder="Please enter here something" onChange={onChange}/>
+                        <span style={{"paddingLeft": "10px"}}>{initialText}</span>
+                    </div>
+                </section>
+                <hr />
+            </div>
+        </>
     )
 }
 
